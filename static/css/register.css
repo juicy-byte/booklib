@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+button{
+    background-color: #573111;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #272727;
+    color: #fff;
+}
+.loginSignupContainer{
+    background: url(/images/actionadventure\ white\ bg.png);
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+.usersection{
+    background-color: #6a6b6e;
+    width: 40%;
+    padding: 2rem 0;
+    border-radius: 0.6rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    box-shadow: 0.3rem 0.3rem 0.8rem 0.1rem rgb(0 0 0 / .8);
+    
+}
+.user-registration{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 1rem;
+    text-align: center;
+    width: 100%;
+    /* align-items: center; */
+    margin-bottom: 2rem;
+}
+#author{
+    display: flex;
+    margin: 0;
+    margin-left: 2.6rem;
+
+}
+#author input{
+    width: 5%;
+}
+.user-registration p{
+    font-size: 12px;
+}
+.user-registration p span a{
+    color: #fff;
+    margin-left: 0.2rem;
+    font-size: 12px;
+}
+.usersection #message{
+    color: #fff;
+    font-size: 15px;
+    /* display: none; */
+}
+
+.user-login{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    gap: 1rem;
+    text-align: center;
+    /* align-items: center; */
+    
+}
+.user-registration input{
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.3rem;
+    align-self: center;
+    width: 80%;
+}
+.user-registration button{
+    width: 82%;
+    align-self: center;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+}
+
+.user-registration input::placeholder{
+    font-size: 0.6rem;
+    /* text-align: center; */
+}
+
+
+
+/* .book-section-title{
+    display: block;
+} */
+
+

@@ -1,0 +1,98 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+button{
+    background-color: #573111;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #272727;
+    color: #fff;
+}
+.loginSignupContainer{
+    background: url(/images/actionadventure\ white\ bg.png);
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+.usersection{
+    background-color: #6a6b6e;
+    width: 40%;
+    padding: 2rem 0;
+    border-radius: 0.6rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    box-shadow: 0.3rem 0.3rem 0.8rem 0.1rem rgb(0 0 0 / .8);
+    
+}
+.user-login{
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    gap: 1rem;
+    text-align: center;
+    /* align-items: center; */
+    
+}
+.user-login input{
+    border-radius: 0.3rem;
+    border: none;
+    padding: 0.3rem;
+    align-self: center;
+    width: 80%;
+}
+.user-login button{
+    width: 82%;
+    align-self: center;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+}
+
+.user-login input::placeholder{
+    font-size: 0.6rem;
+    /* text-align: center; */
+}
+
+
+.user-login-password{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 2rem;
+    align-items: center;
+}
+.user-login-password a{
+    color: #fff;
+    font-size: 8px;
+    text-decoration: none;
+    text-decoration: underline 0.3px white;
+}
+.user-login p {
+    font-size: 12px;
+}
+.user-login p span a{
+    color: #fff;
+    margin-left: 0.2rem;
+    font-size: 12px;
+}

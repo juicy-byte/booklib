@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
+</head>
+<body>
+    <nav>
+        <div class="book-logo-section">
+            <div>
+                <h1 class="nav-logo">LiBrary</h1>
+            </div>
+            <div class="book-choices">
+                <select name="book-type" id="">
+                    <option value="">Book type</option>
+                    <option value="">Romance</option>
+                    <option value="">Science fiction</option>
+                    <option value="">Crime</option>
+                    <option value="">Education</option>
+                    <option value="">Mystery</option>
+                    <option value="">Health and wellness</option>
+                    <option value="">Travel</option>
+                    <option value="">Classics</option>
+                    <option value="">Adventure</option>
+
+                </select>
+                <!-- <p>Recommendation</p> -->
+                <!-- <a href="">
+                    <i class="fa-solid fa-download"></i>
+                </a> -->
+                <!-- <p>Popular</p> -->
+            </div>
+        </div>
+        <!-- <div class="search-area">
+            <input type="search" placeholder="Enter your search here">
+            <button>search</button>
+        </div>
+        <div class="login-signup">
+            <i class="fa-duotone fa-solid fa-cart-shopping"></i>
+            <a href="http://127.0.0.1:5500/login.htmlk">
+                <p>Login</p>
+            </a>
+            <a href="login.html"><button>Start for free</button></a>
+        </div> -->
+    </nav>
+    <section class="cartContainer">
+        <div class="addedItems">
+            <div class="cartCards">
+                <div class="selectCartItem">
+                    <p><span><input type="checkbox"></span> Select All</p>
+                    <p class="deleteItems"><a href="">Delete selected items</a></p>
+                </div>
+                <div  class="cartCard">
+                    <div class="cartCard-details">
+                        <div class="cartCard-image">
+                            <input type="checkbox">
+                            <img src="{% static 'images/bestsellers/lisa BS.jpg' %}" alt="">
+                        </div>
+                        <div class="cartCard-Bookdetails">
+                            <div class="cartCard-bookTitle">
+                                <h5>None of this is true - Lisa Norwell</h5>
+                                <p>Book-Number: 3863-37c</p>
+                            </div>
+                            <div class="cartCard-copy">
+                                <p>Softcopy  <input type="checkbox"></p>
+                                <p>Hardcopy <input type="checkbox"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartCard-pricing">
+                        <div class="itemQuantity">
+                            <p>-</p>
+                            <p class="quantity">2</p>
+                            <p>+</p>
+                        </div>
+                        <div class="itemPrice">
+                            <p class="amountPerItem"><span>#</span>1500</p>
+                            <hr>
+                            <p class="totalAmountPerItem"><span>#</span>3000</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div  class="cartCard">
+                    <div class="cartCard-details">
+                        <div class="cartCard-image">
+                            <input type="checkbox">
+                            <img src="images/bestsellers/lisa BS.jpg" alt="">
+                        </div>
+                        <div class="cartCard-Bookdetails">
+                            <div class="cartCard-bookTitle">
+                                <h5>None of this is true - Lisa Norwell</h5>
+                                <p>Book-Number: 3863-37c</p>
+                            </div>
+                            <div class="cartCard-copy">
+                                <p>Softcopy  <input type="checkbox"></p>
+                                <p>Hardcopy <input type="checkbox"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartCard-pricing">
+                        <div class="itemQuantity">
+                            <p>-</p>
+                            <p class="quantity">2</p>
+                            <p>+</p>
+                        </div>
+                        <div class="itemPrice">
+                            <p class="amountPerItem"><span>#</span>1500</p>
+                            <hr>
+                            <p class="totalAmountPerItem"><span>#</span>3000</p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div  class="cartCard">
+                    <div class="cartCard-details">
+                        <div class="cartCard-image">
+                            <input type="checkbox">
+                            <img src="images/bestsellers/lisa BS.jpg" alt="">
+                        </div>
+                        <div class="cartCard-Bookdetails">
+                            <div class="cartCard-bookTitle">
+                                <h5>None of this is true - Lisa Norwell</h5>
+                                <p>Book-Number: 3863-37c</p>
+                            </div>
+                            <div class="cartCard-copy">
+                                <p>Softcopy  <input type="checkbox"></p>
+                                <p>Hardcopy <input type="checkbox"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartCard-pricing">
+                        <div class="itemQuantity">
+                            <p>-</p>
+                            <p class="quantity">2</p>
+                            <p>+</p>
+                        </div>
+                        <div class="itemPrice">
+                            <p class="amountPerItem"><span>#</span>1500</p>
+                            <hr>
+                            <p class="totalAmountPerItem"><span>#</span>3000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div  class="cartCard">
+                    <div class="cartCard-details">
+                        <div class="cartCard-image">
+                            <input type="checkbox">
+                            <img src="images/bestsellers/lisa BS.jpg" alt="">
+                        </div>
+                        <div class="cartCard-Bookdetails">
+                            <div class="cartCard-bookTitle">
+                                <h5>None of this is true - Lisa Norwell</h5>
+                                <p>Book-Number: 3863-37c</p>
+                            </div>
+                            <div class="cartCard-copy">
+                                <p>Softcopy  <input type="checkbox"></p>
+                                <p>Hardcopy <input type="checkbox"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartCard-pricing">
+                        <div class="itemQuantity">
+                            <p>-</p>
+                            <p class="quantity">2</p>
+                            <p>+</p>
+                        </div>
+                        <div class="itemPrice">
+                            <p class="amountPerItem"><span>#</span>1500</p>
+                            <hr>
+                            <p class="totalAmountPerItem"><span>#</span>3000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div  class="cartCard">
+                    <div class="cartCard-details">
+                        <div class="cartCard-image">
+                            <input type="checkbox">
+                            <img src="images/bestsellers/lisa BS.jpg" alt="">
+                        </div>
+                        <div class="cartCard-Bookdetails">
+                            <div class="cartCard-bookTitle">
+                                <h5>None of this is true - Lisa Norwell</h5>
+                                <p>Book-Number: 3863-37c</p>
+                            </div>
+                            <div class="cartCard-copy">
+                                <p>Softcopy  <input type="checkbox"></p>
+                                <p>Hardcopy <input type="checkbox"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cartCard-pricing">
+                        <div class="itemQuantity">
+                            <p>-</p>
+                            <p class="quantity">2</p>
+                            <p>+</p>
+                        </div>
+                        <div class="itemPrice">
+                            <p class="amountPerItem"><span>#</span>1500</p>
+                            <hr>
+                            <p class="totalAmountPerItem"><span>#</span>3000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkoutDetails">
+            <div class="checkoutDetail-container">
+                    <div class="checkout-cart">
+                        <h5>Cart</h5>
+                        <div class=" cart-details">
+                            <div class="cart-items">
+                                <p>Total number of goods</p>
+                                <p>Product worth</p>
+                                <p>Discount</p>
+                            </div>
+                            <div class="cart-item-price">
+                                <p class="totalPieces">5 pcs</p>
+                                <p class="totalAmount"><span>#</span>15,000</p>
+                                <p class="totalDiscount"><span>#</span>1756</p>
+                            </div>
+                        </div>
+                        <div class="promoCode">
+                            <input type="text" placeholder="search promo code">
+                            <p>Apply</p>
+                        </div>
+                        <div class="checkoutPoint">
+                            <div class="totalCheckoutAmount">
+                                <p>total</p>
+                                <h4><span>#</span>13949</h4>
+                            </div>
+                            <div class="checkoutBtn"><button>Checkout Now</button></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

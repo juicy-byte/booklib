@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: red; */
+    height: 100vh;
+    /* background-color: #fff; */
+}
+button{
+    background-color: #573111;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #272727;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    background-color: #6a6b6e;
+    padding: 0.5rem 0;
+    width: 100%;
+    
+}
+.book-logo-section{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+}
+.nav-logo{
+    padding: 0 2rem;
+}
+.book-choices{
+    display: flex;
+}
+.book-choices select{
+    padding: 0.2rem;
+    margin: 0;
+    border-radius: 2rem;
+
+}
+.book-choices i{
+    padding-left: 3rem;
+    font-size: 15px;
+    color: #cc6007;
+}
+.search-area{
+    display: flex;
+    background-color: #fff;
+    width: 40%;
+    align-self: center;
+    padding: 0.5rem;
+    justify-content: space-between;
+    border-radius: 2rem;
+    margin: 0 auto;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.search-area input{
+    border: none;
+    width: 80%;
+    padding: 0.2rem;
+}
+.search-area input:focus{
+    border-radius: 2rem;
+    outline: 0.1rem solid black;
+}
+.search-area input::placeholder{
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+.login-signup{
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem; 
+    align-items: center;
+}
+.login-signup i{
+    color: #fff;
+}
+.login-signup a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.bookpageLayout{
+    padding: 1rem;
+    margin-top: 2rem;
+    /* height: 100vh; */
+}
+.bookpageContainer{
+    border: 0.02rem solid black;
+    padding: 1rem;
+    /* border: 2px solid green; */
+    margin: 0  auto;
+    width: 70%;
+    display: flex;
+}
+.bookpageCover{
+    /* border: 2px solid purple; */
+
+}
+.bookpageCover img{
+    height: 420px;
+}
+.bookpageDetails{
+    /* border: 0.02rem solid black; */
+    width: 50%;
+    padding: 0 0.5rem;
+}
+.authorDetails{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    text-align: center;
+    gap: 1rem;
+    /* justify-content: center; */
+}
+.authorDetails img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.authorDetails p > span{
+    background-color: #fff;
+    padding: 0.2rem ;
+    border-radius: 50%;
+    font-size: 10px;
+    margin-left: 0.5rem;
+    border: 2px solid #573111;
+}
+.bookRating{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.ratingIcon{
+    color: rgb(154, 154, 20);
+}
+.ratingCount{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+.book-description{
+    font-size: 12px;
+    padding: 0.5rem 0;
+}
+.bookpageDetails p > span{
+    color: #573111;
+    font-weight: bold;
+}
+.bookpageDetail-publish{
+    display: flex;
+    gap: 2rem;
+    margin: 0.5rem 0;
+}
+.publish-info{
+    font-size: 12px;
+}
+.publish-info-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.publish-info-details p{
+    margin: 0;
+    padding: 0;
+    text-align: end;
+    font-size: 9px;
+}
+.bookpageDetails-edition{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+.edition{
+    font-size: 12px;
+}
+.editions{
+    display: flex;
+    gap: 0.5rem;
+}
+.editionsDetails {
+    border: 0.02rem solid black;
+    border-radius: 40%;
+    padding: 0.3rem; 
+    font-size: 10px; 
+}
+.kindle{
+    background-color: #573111;
+    color: #fff;
+}
+.bookpageDetails-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.relatedBook{
+
+}
+.relatedBook h2{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.hr{
+    border: 0.02rem solid black;
+}
+.relatedBookDiv{
+    display: flex;
+    flex-direction: column;
+}
+.relatedBooksContainer{
+    display: flex;
+    /* gap: 4rem; */
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+.relatedbooksCards{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1.2rem;
+
+}
+.relatedbooksCard{
+    border: 0.02rem solid black;
+    padding: 2rem;
+}
+.relatedbooksCard img{
+    height: 150px;
+    width: 120px;
+}
+.relatedbooksCard h5{
+    font-size: 10px;
+    margin-top: 0.5rem;
+}
+.relatedbooksCard p{
+    font-size: 10px;
+    margin-top: 0.5rem;
+}

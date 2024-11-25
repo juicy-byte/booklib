@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: #fff; */
+}
+button{
+    background-color: #cc6007;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #272727;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    /* padding: 0 2rem; */
+    background-color: #573111;
+    padding: 0.5rem 0;
+    /* position: fixed; */
+    width: 100%;
+    /* top: 0; */
+    /* z-index: 1; */
+    
+}
+.book-logo-section{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.nav-logo{
+    padding: 0 2rem;
+}
+.book-choices{
+    display: flex;
+}
+.book-choices select{
+    padding: 0.2rem;
+    margin: 0;
+    border-radius: 2rem;
+
+}
+.book-choices i{
+    padding-left: 3rem;
+    font-size: 15px;
+    color: #cc6007;
+}
+
+.search-area{
+    display: flex;
+    background-color: #fff;
+    width: 40%;
+    align-self: center;
+    padding: 0.5rem;
+    justify-content: space-between;
+    border-radius: 2rem;
+    margin: 0 auto;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.search-area input{
+    border: none;
+    width: 80%;
+    padding: 0.2rem;
+}
+.search-area input:focus{
+    border-radius: 2rem;
+    outline: 0.1rem solid black;
+}
+.search-area input::placeholder{
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+.login-signup{
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem; 
+    align-items: center;
+}
+.login-signup i{
+    color: #cc6007;
+}
+.login-signup a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.book-section{
+    /* display: block; */
+    background-color: #c5c9cd;
+    /* height: 100vh; */
+
+
+    border: 2px solid yellow;
+    /* height: 300px; */
+}
+
+.add-book{
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+
+    /* height: 300px; */
+    border: 2px solid red;
+}
+.books-list{
+    text-align: center;
+    border-top:  2px  solid #573111;
+    border-bottom:  2px  solid #573111;
+    width: 50%;
+    margin:  1rem auto;
+    padding: 1rem;
+  
+}

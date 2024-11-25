@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bookpage.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="book-logo-section">
+            <div>
+                <h1 class="nav-logo">LiBrary</h1>
+            </div>
+            <div class="book-choices">
+                <select name="book-type" id="">
+                    <option value="">Book type</option>
+                    <option value="">Romance</option>
+                    <option value="">Science fiction</option>
+                    <option value="">Crime</option>
+                    <option value="">Education</option>
+                    <option value="">Mystery</option>
+                    <option value="">Health and wellness</option>
+                    <option value="">Travel</option>
+                    <option value="">Classics</option>
+                    <option value="">Adventure</option>
+
+                </select>
+                <!-- <p>Recommendation</p> -->
+                <!-- <a href="">
+                    <i class="fa-solid fa-download"></i>
+                </a> -->
+                <!-- <p>Popular</p> -->
+            </div>
+        </div>
+         <div class="search-area">
+            <input type="search" placeholder="Enter your search here">
+            <button>search</button>
+        </div>
+        <div class="login-signup">
+            <a href="{% url 'users:cart' %}"><i class="fa-duotone fa-solid fa-cart-shopping"></i></a>
+            <a href="{% url 'users:login' %}">
+                <p>Login</p>
+            </a>
+            <a href="{% url 'users:register' %}"><button>Start for free</button></a>
+        </div> 
+    </nav>
+    <section>
+        <div class="bookpageLayout">
+            <div class="bookpageContainer">
+                <div class="bookpageCover">
+                    <img src="{% static 'images/bestsellers/jonathan BS.jpg' %}" alt="">
+                </div>
+                <div class="bookpageDetails">
+                    <h4>Only the obsessive spirit of youth can save a desperate town .</h4>
+                    <div class="authorDetails">
+                        <img src="{% static 'images/WhatsApp Image 2024-06-26 at 00.49.44_0330a0fc.jpg' %}" alt="">
+                        <p> Lauren Jones <span>7.5</span></p>
+                    </div>
+                    <div class="bookRating">
+                        <div class="ratingIcon">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <div class="ratingCount">
+                            <i class="fa-duotone fa-solid fa-share-nodes"></i>
+                            <p>7543</p>
+                        </div>
+                    </div>
+                    <p class="book-description">
+                        Tash Hills is not a folk artist. She is better known for blending funk, soul, and pop in her music, drawing inspiration from artists like Chaka Khan and Marvin Gaye. Based in Portsmouth, she has gained recognition through energetic performances and releases that emphasize modern funk and groove rather than acoustic folk sound <span>..more</span>
+                    </p>
+                    <div class="bookpageDetail-publish">
+                        <div class="publish-info">
+                            <h4>PUBLISHER</h4>
+                            <h4>ISBN</h4>
+                            <h4>LANGUAGE</h4>
+                            <h4>PAGES</h4>
+                            <h4>FIRST PUBLISH</h4>
+                            
+                        </div>
+                        <div class="publish-info-details">
+                            <p>Ugo C. Ugo</p>
+                            <p>37848-396</p>
+                            <p>English (UK)</p>
+                            <p>936</p>
+                            <p>1983</p>
+                        </div>
+                    </div>
+                    <div class="bookpageDetails-edition">
+                        <div class="edition">
+                            <h4>EDITION</h4>
+                        </div>
+                        <div class="editions">
+                            <div class="editionsDetails kindle"> <p >Kindle</p></div>
+                            <div class="editionsDetails"> <p>Softcopy</p></div>
+                            <div class="editionsDetails"> <p>Hardcover</p></div>
+                            <div class="editionsDetails"> <p>Audio</p></div>
+                        </div>
+                    </div>
+                    <div class="bookpageDetails-buttons">
+                        <button class="cartAddBtn" >Add to Cart</button>
+                        <button class="previewBtn">Preview</button>
+                    </div>
+                </div>
+            </div>
+            <div class="relatedBook">
+                <h2>Related Books</h2>
+                <hr>
+                <div class="relatedBookDiv">
+                    <div class="relatedBooksContainer">
+                        <div class="relatedbooksCards">
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="relatedbooksCards">
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="relatedBooksContainer">
+                        <div class="relatedbooksCards">
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="relatedbooksCards">
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="relatedBooksContainer">
+                        <div class="relatedbooksCards">
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="relatedbooksCards">
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                            <div class="relatedbooksCard">
+                                <img src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt="">
+                                <div>
+                                    <h5>The Tales of Taylor</h5>
+                                    <p>Taylor Swift</p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

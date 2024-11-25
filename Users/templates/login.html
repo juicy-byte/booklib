@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <div class="loginSignupContainer"></div>
+    <div class="signup-login-container">
+        <div class="usersection " id="user-section">
+            <!-- <div class="user-login" id="userLogin">
+                <h4>Login</h4>
+                <input type="text" id="login-email" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="password">
+                <div class="user-login-password">
+                    <button onclick="library.loginUser()">Login</button>
+                    <a href="{% url 'users:password' %}">Forgot Password?</a>
+                </div> -->
+                <form action="">
+                    {{form}}
+                </form>
+                <p>Don't have an account?<span><a id="signupLink" href="{% url 'users:register' %}">Signup</a></span></p>    
+            </div>
+        </div>   
+    </div>
+
+    <script src="library.js"></script>
+</body>
+</html>

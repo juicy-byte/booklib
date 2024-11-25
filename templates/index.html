@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="{%  static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="book-logo-section">
+            <div>
+                <h1 class="nav-logo">LiBrary</h1>
+            </div>
+            <div class="book-choices">
+                <select name="book-type" id="">
+                    <option value="">Book type</option>
+                    <option value="">Romance</option>
+                    <option value="">Science fiction</option>
+                    <option value="">Crime</option>
+                    <option value="">Education</option>
+                    <option value="">Mystery</option>
+                    <option value="">Health and wellness</option>
+                    <option value="">Travel</option>
+                    <option value="">Classics</option>
+                    <option value="">Adventure</option>
+
+                </select>
+                <!-- <p>Recommendation</p> -->
+                <a href="">
+                    <i class="fa-solid fa-download"></i>
+                </a>
+                <!-- <p>Popular</p> -->
+            </div>
+        </div>
+        <div class="search-area">
+            <input type="search" placeholder="Enter your search here">
+            <button>search</button>
+        </div>
+        <div class="login-signup">
+            <a href="{% url  'users:cart' %}"><i class="fa-duotone fa-solid fa-cart-shopping"></i></a>
+            <a href="{% url 'users:login' %}">
+                <p>Login</p>
+            </a>
+            <a href="{% url 'users:register' %}"><button>Start for free</button></a>
+        </div>
+    </nav>
+    <section>
+
+        <div class="splash-page">
+            <div class="splash-text">
+                <div class="splashTexts">
+                    <h1>Find best sellers</h1>
+                    <h1>Read top trending books</h1>
+                    <h1>Publish all book types</h1>
+
+                </div>
+                <p>Navigate the digital library, the most appropriate site for searching and uploading books.</p>
+
+
+            </div>
+            <div class="splash-image"><img
+                    src="{% static 'images/pretty-couple-reading-books-while-sitting-floor-removebg-preview.png' %} " alt="">
+            </div>
+        </div>
+    </section>
+    <section class="bookListAndCategory">
+        <div class="book-category prevent-scroll">
+            <select name="Entertainment" id="">
+                <option value="">Entertainment</option>
+                <option value="">Celebrity Biographies</option>
+                <option value="">Film and Television</option>
+                <option value="">Music Nonfiction</option>
+                <option value="">Theater and Drama</option>
+                <option value="">Dance</option>
+                <option value="">Comics and Graphic Novels</option>
+                <option value="">Humor and Satire</option>
+                <option value="">Oral Histories</option>
+                <option value="">Writing and Literature</option>
+
+            </select>
+            <hr>
+            <select name="Sports" id="">
+                <option value="">Sports</option>
+                <option value="">Fantasy Sports</option>
+                <option value="">Sports Journalism</option>
+                <option value="">Fitness and Training</option>
+                <option value="">Sports Analysis</option>
+                <option value="">Instructional Guides</option>
+                <option value="">Sports Psychology</option>
+                <option value="">Sports Fiction</option>
+                <option value="">Sports Biographies</option>
+                <option value="">Sports History</option>
+
+            </select>
+            <hr>
+            <select name="Education" id="">
+                <option value="">Education</option>
+                <option value="">Teaching Methods</option>
+                <option value="">Professional Development</option>
+                <option value="">Curriculum Guides</option>
+                <option value="">Child Development</option>
+                <option value="">textbooks</option>
+                <option value="">Educational Psychology</option>
+                <option value="">Special Education </option>
+                <option value="">Literacy and Language Arts </option>
+                <option value="">History of Education</option>
+
+            </select>
+            <hr>
+            <select name="Children" id="">
+                <option value="">Children</option>
+                <option value="">Fantasy Sports</option>
+                <option value="">Sports Journalism</option>
+                <option value="">Fitness and Training</option>
+                <option value="">Sports Analysis</option>
+                <option value="">Instructional Guides</option>
+                <option value="">Sports Psychology</option>
+                <option value="">Sports Fiction</option>
+                <option value="">Sports Biographies</option>
+                <option value="">Sports History</option>
+
+            </select>
+            <hr>
+            <select name="Politics" id="">
+                <option value="">Politics</option>
+                <option value="">Fantasy Sports</option>
+                <option value="">Sports Journalism</option>
+                <option value="">Fitness and Training</option>
+                <option value="">Sports Analysis</option>
+                <option value="">Instructional Guides</option>
+                <option value="">Sports Psychology</option>
+                <option value="">Sports Fiction</option>
+                <option value="">Sports Biographies</option>
+                <option value="">Sports History</option>
+
+            </select>
+            <hr>
+            <select name="history" id="">
+                <option value="">History</option>
+                <option value="">Fantasy Sports</option>
+                <option value="">Sports Journalism</option>
+                <option value="">Fitness and Training</option>
+                <option value="">Sports Analysis</option>
+                <option value="">Instructional Guides</option>
+                <option value="">Sports Psychology</option>
+                <option value="">Sports Fiction</option>
+                <option value="">Sports Biographies</option>
+                <option value="">Sports History</option>
+
+            </select>
+        </div>
+        <div class="bookDisplay">
+            <div class="best-sellers">
+                <h1>Our best sellers</h1>
+                <p>Discover the must-reads of the moment in our Best Seller category—where captivating stories and
+                    transformative ideas come together to inspire readers everywhere!</p>
+                <div class="scroll-container">
+                    <a href="{% url 'users:bookpage' %}">                    <img class="checkoutDetails" src="{% static 'images/bestsellers/dogman BS.jpg' %}" alt=""></a>
+
+                    <a href="{% url 'users:bookpage' %}">                    <img class="checkoutDetails" src="{% static 'images/bestsellers/forth wing BS.jpg' %}" alt=""></a>
+
+                    <a href="{% url 'users:bookpage' %}">                    <img class="checkoutDetails" src="{% static 'images/bestsellers/inmate BS.jpg' %}" alt=""></a>
+
+
+                    <a href="{% url 'users:bookpage' %}">                    <img class="checkoutDetails" src="{% static 'images/bestsellers/jonathan BS.jpg' %}" alt=""></a>
+
+
+                    <a href="{% url 'users:bookpage' %}">                    <img class="checkoutDetails" src="{%static 'images/bestsellers/lisa BS.jpg' %}" alt=""></a>
+
+
+                    <a href="{% url 'users:bookpage' %}">                    <img class="checkoutDetails" src="{% static 'images/bestsellers/powerful BS.jpg' %}" alt=""></a>
+
+
+                    <a href="{% url 'users:bookpage' %}">                    <img class="checkoutDetails" src="{% static 'images/bestsellers/taylor BS.jpg' %}" alt=""></a>
+
+
+                    <a href="{% url 'users:bookpage' %}">                    <img class="checkoutDetails" src="{% static 'images/bestsellers/wild love BS.jpg' %}" alt=""></a>
+
+                    <a href="{% url 'users:bookpage' %}">                    <img class="checkoutDetails" src="{% static 'images/bestsellers/lisa BS.jpg' %}" alt=""></a>
+
+
+                    <a href="{% url 'users:bookpage' %}">                    <img class="checkoutDetails" src="{% static 'images/bestsellers/jonathan BS.jpg' %}" alt=""></a>
+
+
+                    <a href="{% url 'users:bookpage' %}">                    <img class="checkoutDetails" src="{% static 'images/bestsellers/taylor BS.jpg' %}" alt=""></a>
+                </div>
+
+            </div>
+            <div class="top-rated-container">
+                <h1 class="top-rated-container-heading">Top rated</h1>
+                <p class="top-rated-container-caption">Explore our Top Rated section—where readers' favorites shine!
+                    Discover the books that have captured
+                    hearts and minds.</p>
+                <div class="topRated">
+                    <div class="grid-item checkoutDetails"><img src="{% static 'images/top-rated/top rated 1.jpg' %}" alt="">
+                        <div>
+                            <h3>$0.00</h3>
+                            <p>The Eternal Frontier Box Set (Books 1-3): A Military Sci-Fi Adventure</p>
+
+                        </div>
+                    </div>
+                    <div class="grid-item checkoutDetails"><img src="{% static 'images/top-rated/top rated 2.jpg' %}" alt="">
+                        <div>
+                            <h3>$0.00</h3>
+                            <p>The Eternal Frontier Box Set (Books 1-3): A Military Sci-Fi Adventure</p>
+
+                        </div>
+                    </div>
+                    <div class="grid-item checkoutDetails"><img src="{% static 'images/top-rated/top rated 3.jpg' %}" alt="">
+                        <div>
+                            <h3>$0.00</h3>
+                            <p>The Eternal Frontier Box Set (Books 1-3): A Military Sci-Fi Adventure</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="allbooks">
+                <h1>All books available</h1>
+                <p>Explore Our Complete Collection: Discover Every Book at Your Fingertips!</p>
+                <div class="allbooks-cardrow1">
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/lisa BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/forth wing BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/inmate BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/dogman BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/jonathan BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/powerful BS.jpg' %}" alt="">
+                    </div>
+                    <!-- <img src="/images/bestsellers/taylor BS.jpg" alt=""> -->
+                </div>
+                <div class="allbooks-cardrow1">
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/lisa BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/forth wing BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/inmate BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/dogman BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/jonathan BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/powerful BS.jpg' %}" alt="">
+                    </div>
+                    <!-- <img src="/images/bestsellers/taylor BS.jpg" alt=""> -->
+                </div>
+                <div class="allbooks-cardrow1">
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/lisa BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/forth wing BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/inmate BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/dogman BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/jonathan BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/powerful BS.jpg' %}" alt="">
+                    </div>
+                    <!-- <img src="/images/bestsellers/taylor BS.jpg" alt=""> -->
+                </div>
+                <div class="allbooks-cardrow1">
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/lisa BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/forth wing BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/inmate BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/dogman BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/jonathan BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/powerful BS.jpg' %}" alt="">
+                    </div>
+                    <!-- <img src="/images/bestsellers/taylor BS.jpg" alt=""> -->
+                </div>
+                <div class="allbooks-cardrow1">
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/lisa BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/forth wing BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/inmate BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/dogman BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/jonathan BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/powerful BS.jpg' %}" alt="">
+                    </div>
+                    <!-- <img src="/images/bestsellers/taylor BS.jpg" alt=""> -->
+                </div>
+                <div class="allbooks-cardrow1">
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/lisa BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/forth wing BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/inmate BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/dogman BS.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/jonathan BS.jpg' %}" alt="">
+                        <img class="checkoutDetails" src="{% static 'images/bestsellers/powerful BS.jpg' %}" alt="">
+                    </div>
+                    <!-- <img src="/images/bestsellers/taylor BS.jpg" alt=""> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="bookpage">
+            <h3 class="discounted">Weekly Discounted Books!</h3>
+
+            <div class="bookContent">
+                <div class="bookContentImage">
+                    <img src="{% static 'images/bestsellers/jonathan BS.jpg' %}" alt="">
+                </div>
+                <div class="bookContentText">
+                    <h3> Taylor Swift, The lost child</h3>
+                    <p>Taylor O. Swift</p>
+                </div>
+                <div class="bookContentRating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="bookPageDetails">
+                <hr>
+                <div class="book-pricing">
+                    <div class="softcopy price">
+                        <h5>Soft copy</h5>
+                        <h6>150.99<h6>
+                        <h3>#99.99</h3>
+                        <p>Available Immediately</p>
+                    </div>
+                    <div class="hardcopy price">
+                        <h5>Hard copy</h5>
+                        <h6>150.99</h6>
+                        <h3>#99.99</h3>
+                        <p>Delivery in 5 days</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="checkoutBtn">
+                <button class="checkout">Checkout</button>
+                <button>Buy Now</button>
+            </div>
+
+        </div>
+
+
+    </section>
+    <footer class="footerSection">
+        <div>
+            <p>Trusted by thousands of companies around the world</p>
+        </div>
+        <div class="footerLogos">
+            <a href=""><img src="{% static 'images/download-removebg-preview-removebg-preview.png' %}" alt=""></a>
+            <a href=""><img src="{% static 'images/dribble-removebg-preview.png' %}" alt=""></a>
+            <a href=""><img src="{% static 'images/disney-removebg-preview.png' %}" alt=""></a>
+            <a href=""><img src="{% static 'images/spotify-removebg-preview.png' %}" alt=""></a>
+            <a href=""><img src="{% static 'images/netflix-removebg-preview.png' %}" alt=""></a>
+            <a href=""><img src="{% static 'images/joox-removebg-preview.png' %}" alt=""></a>
+            <a href=""><img src="{% static 'images/yahoo-removebg-preview.png' %}" alt=""></a>
+        </div>
+        <div class="socials">
+            <p>Follow us on our socials</p>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="{% static 'library.js' %}"></script>
+</body>
+
+</html>
